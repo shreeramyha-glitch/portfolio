@@ -152,33 +152,178 @@ section{
 
 /* Projects */
 
-.project-card{
+/* =========================
+   Projects Section
+========================= */
+
+#projects{
+    padding:80px;
+}
+
+#projects .title{
+    text-align:center;
+    color:#2196f3;
+    font-size:50px;
+    margin-bottom:50px;
+}
+
+/* Project Box */
+
+.project-box{
+    display:flex;
+    width:90%;
+    min-height:280px;
+    margin:35px auto;
+
+    background:#111;
+    border:1px solid #2196f3;
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 0 10px rgba(33,150,243,0.15);
+
+    transition:0.4s ease;
+}
+
+/* Hover */
+
+.project-box:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 0 20px rgba(33,150,243,0.5),
+        0 0 40px rgba(33,150,243,0.2);
+}
+
+
+/* Left Category */
+
+.project-category{
+    width:32%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        #2196f3,
+        #1268c4
+    );
+
+    color:white;
+}
+
+
+/* Category Icon */
+
+.project-icon{
+    width:70px;
+    height:70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:32px;
+    font-weight:bold;
+
+    border:3px solid white;
+    border-radius:12px;
+
+    margin-bottom:20px;
+}
+
+
+/* Figma Icon */
+
+.figma-icon{
+    border-radius:50%;
+    font-size:38px;
+}
+
+
+/* WordPress Icon */
+
+.wordpress-icon{
+    border-radius:50%;
+    font-family:Georgia, serif;
+    font-size:42px;
+}
+
+
+/* Category Heading */
+
+.project-category h2{
+    font-size:27px;
+    line-height:1.4;
+}
+
+
+/* Right Content */
+
+.project-content{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:50px 55px;
+
+    background:#111;
+}
+
+
+/* Project Name */
+
+.project-content h2{
+    color:#2196f3;
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+
+/* Project Button */
+
+.project-btn{
+    display:inline-block;
+
+    width:max-content;
+
+    padding:12px 22px;
+
+    border:1px solid #2196f3;
+    border-radius:7px;
+
+    color:#2196f3;
+    background:transparent;
+
+    text-decoration:none;
+
+    font-size:17px;
+    font-weight:bold;
+
+    transition:0.3s ease;
+}
+
+
+/* Button Hover */
+
+.project-btn:hover{
     background:#2196f3;
     color:white;
-    padding:40px;
-    margin:30px auto;
-    width:80%;
-    border-radius:20px;
-
-    transition:all 0.4s ease;
 
     box-shadow:
-        8px 8px 15px rgba(0,0,0,0.4),
-        -4px -4px 10px rgba(255,255,255,0.2);
+        0 0 15px rgba(33,150,243,0.7);
+
+    transform:translateY(-3px);
 }
-
-.project-card:hover{
-    transform:
-        translateY(-10px)
-        scale(1.03);
-
-    box-shadow:
-        0 0 20px #1976d2,
-        0 0 40px rgba(25,118,210,0.5);
-
-    cursor:pointer;
-}
-
 /* Contact */
 
 #contact{
